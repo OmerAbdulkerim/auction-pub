@@ -1,0 +1,97 @@
+@import "utils/constants.scss";
+
+.outlet {
+    .disabled-content {
+        display: none;
+    }
+}
+
+.product-tabs {
+    #tabs-div {
+        min-width: 100%;
+        margin: 10% 0 5% 0;
+        border-bottom: 1px solid $whitish3;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        color: $greyish;
+
+        .tab-active {
+            border: none;
+            color: $purplish;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19.2px;
+            border-bottom: 1px solid $purplish;
+            --antd-wave-shadow-color: none;
+        }
+
+        .disabled {
+            cursor: not-allowed;
+            &:hover {
+                color: $greyish;
+            }
+        }
+
+        button {
+            border: none;
+            padding: 0 2vw 1vh 2vw;
+            margin-right: 1vw;
+            --antd-wave-shadow-color: none;
+
+            &:hover {
+                color: $purplish;
+                font-weight: 700;
+            }
+            &:disabled {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.grid-tabs {
+    #tabs-div {
+        min-width: 100%;
+        margin: 4vh 0;
+        border-bottom: 1px solid #d8d8d8;
+
+        button {
+            background-color: $whitish2;
+            border: none;
+            height: fit-content;
+            letter-spacing: 0.84px;
+            margin-right: 5%;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+            --antd-wave-shadow-color: none;
+
+            transition: none;
+
+            &:hover {
+                font-weight: 700;
+                color: black;
+            }
+        }
+
+        .disabled {
+            cursor: not-allowed;
+            &:hover {
+                color: $greyish;
+            }
+        }
+
+        .tab-active {
+            border: none;
+            padding: 0 2vw 1vh 0;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: black;
+            border-bottom: 3px solid $purplish;
+            --antd-wave-shadow-color: none;
+        }
+    }
+}

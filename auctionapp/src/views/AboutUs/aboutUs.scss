@@ -1,0 +1,37 @@
+@import "utils/constants.scss";
+
+#about-us-container {
+    width: 100%;
+    padding: 0% 11.43%;
+
+    h3 {
+        text-align: left;
+        margin-top: 3%;
+    }
+
+    #about-row {
+        margin-top: 5%;
+
+        #about-text {
+            text-align: start;
+            padding-right: 2%;
+
+            p {
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    #first-pic-col {
+        padding: 0% 5%;
+        margin-bottom: 5%;
+    }
+
+    #second-pic-row {
+        padding: 0% 5%;
+    }
+    .templayte-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

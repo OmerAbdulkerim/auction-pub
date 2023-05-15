@@ -1,0 +1,169 @@
+@import "utils/constants.scss";
+
+#nav-main-div {
+    min-height: 9.5rem;
+
+    #header {
+        min-height: 2.5rem;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        background-color: $darkish;
+        padding-left: 11.5%;
+        padding-right: 11.5%;
+
+        #icons-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: $darkish;
+
+            .social-icon {
+                max-width: 25px;
+                max-height: 25px;
+                margin-right: auto;
+
+                div {
+                    background-color: $darkish;
+                    svg {
+                        background-color: $darkish;
+                    }
+                }
+            }
+        }
+    }
+
+    #username {
+        color: $whitish;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    #href-container {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $greyish;
+        gap: 1rem;
+        background-color: $darkish;
+
+        .header-button {
+            &:link,
+            &:visited,
+            &:hover,
+            &:active {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    #navbar {
+        min-height: 3.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 11.5% 2rem 11.5%;
+        background-color: white;
+
+        #logo-container {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+
+        #logo-container-start {
+            display: flex;
+            justify-content: start;
+            background-color: white;
+        }
+
+        .logo {
+            width: 10rem;
+            height: 3.5rem;
+        }
+
+        #navbar-right-div {
+            justify-content: space-between;
+            width: 100%;
+            gap: 5%;
+            background-color: white;
+
+            #search-div {
+                outline: solid $whitish 1px;
+                height: 3.5rem;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                background-color: white;
+
+                #search-form {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    padding: 0 1vw;
+                    background-color: white;
+
+                    input[type="text"] {
+                        box-shadow: none;
+                        &:active,
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    #search-input {
+                        min-height: 3.5rem;
+                        width: 100%;
+                        border: none;
+                        padding: 0% 2%;
+                        background-color: white;
+                    }
+
+                    #search-button {
+                        border: none;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+        #refs {
+            margin-left: 1rem;
+            #navbar-hrefs {
+                gap: 1rem;
+                background-color: white;
+                justify-content: space-evenly;
+                width: 100%;
+
+                .navbar-button {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    font-style: normal;
+                    margin-left: auto;
+
+                    &:link,
+                    &:visited {
+                        text-decoration: none;
+                        color: $darkish;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: $purplish;
+                    }
+                    &:active {
+                        color: $purplish;
+                        text-decoration: none;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

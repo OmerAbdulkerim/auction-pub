@@ -1,0 +1,92 @@
+@import "utils/constants.scss";
+
+#footer-container {
+    margin-top: 2rem;
+    padding: 3% 11.43%;
+    background: $darkish;
+    min-height: 20rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: normal;
+
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px #3b3b3b inset;
+      }
+      
+
+    #columns-container {
+        background-color: $darkish;
+        p,
+        .ant-row,
+        .column {
+            background-color: $darkish;
+        }
+
+        .column {
+            margin-bottom: 5vh;
+        }
+    }
+
+    .row-title {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .firstFooterParagraph {
+        margin-top: 2%;
+        color: white;
+        margin-bottom: 2%;
+    }
+    .footerParagraph {
+        color: white;
+    }
+
+    .ant-row {
+        color: #9b9b9b;
+        text-align: left;
+    }
+    .ant-btn {
+        padding: 0%;
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        font-style: normal;
+    }
+    #social-icon-row {
+        gap: 1rem;
+        div {
+            background-color: $darkish;
+            svg {
+                background-color: $darkish;
+            }
+        }
+    }
+    .social-icon-footer {
+        max-width: 25px;
+        max-height: 25px;
+    }
+    span {
+        background-color: $darkish;
+    }
+    #input-email {
+        max-width: 55%;
+        margin-right: 3%;
+        color: white;
+        opacity: 0.8;
+        background-color: #3b3b3b;
+        border-color: transparent;
+        height: 50px;
+    }
+    #subscribe-to-email {
+        background: transparent;
+        border: 3px solid #8367d8;
+        opacity: revert;
+        padding: revert;
+        width: 35%;
+        height: 50px;
+        background-color: $darkish;
+    }
+}

@@ -1,0 +1,178 @@
+@import "utils/constants.scss";
+
+#page-container {
+    padding: 0 11.43%;
+
+    #product-container {
+        margin-top: 3rem;
+
+        #images-container {
+            height: fit-content;
+        }
+
+        #large-preview {
+            justify-content: space-evenly;
+            width: 60vh;
+            height: 60vh;
+            margin-bottom: 5vh;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #all-images {
+            max-width: 30vw;
+            justify-content: space-evenly;
+
+            .small-previews {
+                max-width: 10vh;
+                height: 10vh;
+                margin: 0 3%;
+                background-color: grey;
+
+                :hover,
+                :focus,
+                :active {
+                    opacity: 0.7;
+                }
+
+                button {
+                    padding: 0;
+                    border: none;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        #product-information-container {
+            #product-price {
+                margin: 3% 0;
+            }
+
+            p {
+                text-align: start;
+            }
+
+            .highlighted-span {
+                color: $purplish;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            #bids-container {
+                width: fit-content;
+                flex-direction: column;
+                border: 1px solid $greyish;
+                padding: 4% 6%;
+                margin-bottom: 10%;
+
+                p {
+                    margin-bottom: 10%;
+                }
+
+                :last-of-type p {
+                    margin-bottom: 0;
+                }
+            }
+
+            h3 {
+                color: black;
+                text-align: start;
+                margin-top: 0;
+            }
+
+            #bid-amount-container {
+                border: 1px solid $greyish;
+                opacity: 0.8;
+                margin: 0;
+                width: 60%;
+                margin-right: 5%;
+
+                input {
+                    min-height: 50px;
+                    width: 100%;
+                    padding: 0 10%;
+                    border: none;
+                    margin: 0;
+                    box-shadow: none;
+
+                    &:focus,
+                    &:active {
+                        border: none;
+                    }
+                }
+            }
+
+            #place-bid-button {
+                width: 30%;
+                border: 3px solid $purplish;
+                margin: 0;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+
+                button {
+                    min-height: 50px;
+                    width: 100%;
+                    height: inherit;
+                    border: none;
+                }
+
+                .ant-row {
+                    justify-content: space-evenly;
+                }
+
+                span {
+                    margin: 0 5%;
+                }
+            }
+        }
+    }
+    #separator {
+        margin-top: 5rem;
+        justify-content: center;
+        border-bottom: solid 1px $greyish;
+    }
+    #bidders-table {
+        margin-top: 5rem;
+        border: 1px solid $whitish;
+
+        td {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+        th {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 27px;
+        }
+        .ant-table-wrapper {
+            width: 100%;
+        }  
+
+        .ant-tag {
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            background: transparent;
+        }
+    }
+}

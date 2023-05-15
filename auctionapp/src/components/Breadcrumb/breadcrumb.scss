@@ -1,0 +1,25 @@
+@import "utils/constants.scss";
+
+#breadcrumb-container {
+    justify-content: space-between;
+
+    #breadcrumb-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .ant-breadcrumb ol {
+        justify-content: end;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ant-breadcrumb li:last-child a {
+        color: $purplish;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}

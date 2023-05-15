@@ -1,0 +1,61 @@
+@import "utils/constants.scss";
+
+#message-container-outbid {
+    height: 2rem;
+    justify-content: start;
+    background-color: #f6f2e5;
+    color: #AB944E;
+
+    #bold-span,
+    #regular-span {
+        background-color: #f6f2e5;
+    }
+}
+
+#message-container-topbid {
+    height: 2rem;
+    justify-content: start;
+    background-color: #f0f3ee;
+    color: #417505;
+
+    #bold-span,
+    #regular-span {
+        background-color: #f0f3ee;
+    }
+}
+
+#message-container-win {
+    height: 2rem;
+    justify-content: start;
+    color: #8367D8;
+    background-color: #f1effa;
+
+    #bold-span,
+    #regular-span {
+        background-color: #f1effa;
+    }
+}
+
+#message-container-invalid {
+    height: 2rem;
+    justify-content: start;
+    color: #E10000;
+    background-color: #f5f0f0;
+
+    #bold-span,
+    #regular-span {
+        background-color: #f5f0f0;
+    }
+}
+
+#regular-span,
+#bold-span {
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+
+#bold-span {
+    font-weight: 800;
+}

@@ -1,0 +1,39 @@
+@import "utils/constants.scss";
+
+#privacy-container {
+    width: 100%;
+    padding: 0% 11.43%;
+
+    h3 {
+        align-self: baseline;
+        color: black;
+    }
+
+    #policy-row {
+        margin-top: 5%;
+        text-align: center;
+        padding: 0% 20%;
+
+        #policy-title {
+            width: fit-content;
+        }
+
+        #policy-text {
+            text-align: start;
+            min-width: 100%;
+            margin-top: 5%;
+
+            p {
+                margin-bottom: 5%;
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        #made-with {
+            justify-content: center;
+        }
+    }
+}

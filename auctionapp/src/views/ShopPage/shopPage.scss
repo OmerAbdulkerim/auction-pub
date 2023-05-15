@@ -1,0 +1,97 @@
+@import "utils/constants.scss";
+
+#shop-container {
+    margin: 5vh 0;
+    padding: 0 11.43%;
+    justify-content: space-between;
+
+    #filter-container {
+        border: 0.5px solid $greyish;
+        height: fit-content;
+
+        h1 {
+            font-size: 16px;
+            line-height: 17px;
+            color: $purplish;
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            border: none;
+        }
+
+        #category-filter {
+            text-align: start;
+            padding: 10%;
+
+            .category-container {
+                padding: 0;
+                margin: 0;
+                margin-bottom: 10%;
+
+                display: flex;
+                flex-direction: row;
+
+                .category-header {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+
+                    .parent-name {
+                        font-weight: 700;
+                    }
+
+                    p {
+                        align-self: center;
+                        margin: 0;
+                        font-weight: 400;
+                        line-height: 17px;
+                        color: black;
+                    }
+                }
+
+                .category-body {
+                    width: 100%;
+
+                    .checkbox-row {
+                        width: 100%;
+
+                        color: $greyish;
+                        filter: $purplish;
+
+                        input[type="checkbox"] {
+                            margin-left: 3%;
+                            margin-right: 10%;
+                            accent-color: $purplish;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #products-col {
+        #grid-row {
+            margin-bottom: 5vh;
+        }
+
+        #explore-button-row {
+            justify-content: center;
+
+            #explore-more {
+                border: none;
+                padding: 1rem 3rem;
+
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+                letter-spacing: 0.63px;
+
+                color: white;
+                background-color: $purplish;
+            }
+        }
+    }
+}

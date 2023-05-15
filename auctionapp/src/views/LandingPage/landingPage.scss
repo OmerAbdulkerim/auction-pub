@@ -1,0 +1,63 @@
+@import "utils/constants.scss";
+
+#landing-container {
+    padding: 0 11.43%;
+
+    #categories-highlighted-row {
+        justify-content: space-between;
+
+        p {
+            margin-top: auto;
+        }
+
+        #highlighted-product {
+            display: flex;
+            align-items: center;
+        }
+
+        #categories-container {
+            background-color: white;
+
+            #categories-title {
+                background-color: white;
+                text-align: start;
+                color: $purplish;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .category-row {
+                background-color: white;
+                display: flex;
+                align-items: center;
+                text-align: start;
+                border-bottom: solid 1px $whitish;
+                width: 262px;
+                height: 56px;
+
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: black;
+
+                    &:hover {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    #new-top-latest-row {
+        padding-top: 5vh;
+
+        #bottom-buttons {
+            width: 100%;
+
+            .grid-tabs {
+                width: 100%;
+            }
+        }
+    }
+}
